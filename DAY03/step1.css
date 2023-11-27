@@ -1,0 +1,132 @@
+/* 
+    어디의{무엇을:어떻게;}
+    1.어디의(선택자)
+        1.* 2. 마크업 3. .class 4.#id
+
+
+*/
+
+.box1{
+    border: 1px solid red;
+    /* 두께 선의 종류 색상 */
+
+}
+
+.box2{
+    border-top: 1px solid blue;
+    border-right: 2px dotted orange;
+    border-bottom: double 3px red;
+    border-left: 4px black dashed;
+}
+
+.box3{
+    border: solid 2px red;
+    border-radius: 50px;  /*둥근모서리*/
+}
+
+
+.box4{
+    border: solid 1px blue;
+    padding: 10px; /*안쪽여백*/
+    margin: 20px; /*바깥여백*/
+}
+
+.box5{
+    border: solid 1px magenta;
+    padding-top: 20px; /*위 안쪽여백*/
+    padding-right: 30px;/*오른쪽 안쪽여백*/
+    padding-bottom: 40px; /*아래 안쪽여백*/
+    padding-left: 50px;/* 왼쪽안쪽여백 */
+    margin-top: 50px ; /*위 바깥여백*/
+    margin-right: 60px; /*오른쪽 바깥여백*/
+    margin-bottom: 70px; /*아래바깥여백*/
+    margin-left: 80px; /*왼쪽 바깥여백*/
+}
+
+.box6{
+    border: solid 1px cyan;
+    padding: 10px 20px 30px 40px;
+    /*위 오른쪽 아래쪽 왼쪽의 안쪽여백 시계방향*/
+    padding: 100px 20px ;
+    /* 위 아래, 왼쪽 오른쪽의 안쪽여백 */
+    padding: 10px;
+    /* 전방향 안쪽여백 */
+
+    margin: 10px 20px 30px 40px;
+    /* 위 오른쪽 아래쪽 왼쪽의 바깥여백 */
+    margin: 10px 20px;
+    /* 위 아래, 왼쪽 오른쪽의 바깥여백 */
+    margin: 10px;
+    /* 전방향 바깥여백 */
+}
+
+.box7{
+    width: 200px; /*가로 사이즈*/
+    height: 200px; /*세로 사이즈*/
+    border: 1px solid yellow;
+    box-sizing: border-box;
+    /*border+padding을 사이즈에 포함,포함 안할경우 content-box:200+20+20+10+10=260px*/
+    /* border-box: 200-> 200(컨텐츠의 크기가 작아짐) */
+    padding: 20px;
+    border: solid 10px red;
+    /* 내용(content) 가운데 정렬 */
+    text-align: center;
+    /* 박스(box) 가운데정렬 */
+    margin: 0 auto;
+}
+
+
+div{
+    border: solid 1px red;
+    margin: 20px;
+    background: rgb(205, 214, 214);
+}
+span{
+    background-color: orange;
+}
+
+.s1{
+    display: inline; /*인라인: span 기본값*/
+    width: 200px;  /*가로,세로 사이즈 적용불가*/
+    height: 200px;
+}
+
+.s2{
+    display: block; /*블록*/
+    width: 200px; /*가로 세로 사이즈 적용 가능*/
+    height: 200px;
+}
+
+.s3{
+    display: inline-block; /*인라인-블록*/
+    width: 200px;
+    height: 300px;
+}
+
+.s4{
+    display: none; /*숨기기*/
+    width: 200px; height: 200px;
+}
+
+.d1{
+    display: inline; /*인라인: span 기본값*/
+    width: 200px;  /*가로,세로 사이즈 적용불가*/
+    height: 200px;
+}
+
+.d2{
+    display: block; /*블록*/
+    width: 200px; /*가로 세로 사이즈 적용 가능*/
+    height: 200px;
+}
+
+.d3{
+    display: inline-block; /*인라인-블록*/
+    width: 200px;
+    height: 300px;
+}
+
+.d4{
+    display: none; /*숨기기*/
+    width: 200px; height: 200px;
+}

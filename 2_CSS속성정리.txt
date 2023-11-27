@@ -1,3 +1,9 @@
+CSS : Cascading StyleSheet
+    - HTML(뼈대) -http
+    - CSS(스타일-옷)
+    - JS(행위/행동-이벤트)
+        - css와 js는 HTML에 포함된 구조
+
 1.CSS 적용하는 방법
     1.CSS파일을 만들어 HTML <head>태그에 호출 (권장)
         <link rel="stylesheet" href="css파일경로">
@@ -41,8 +47,47 @@
         line-through 취소선
         underline 밑줄
         overline 윗줄
-    12.text-shadow                  :텍스트 그림자
+    12.text-shadow                  :텍스트 그림자(강조)
         x축 y축 흐림정도 색상
+    =====박스 모델 관련======
+    1.border
+        :두께 선 종류 색상
+        border-top, border-right, border-bottom,border-left
+        :선 종류
+        solid, dotted, double, dashed
+    2.padding                       :안쪽여백 
+        padding-top,padding-right,padding-bottom,padding-left
+    3.margin                        :바깥여백
+        margin-top,margin-right,margin-bottom,margin-left
+    
+    2,3효율적 표기
+
+    padding: 10px;                  :전체
+    padding: 10px 20px;             :상하,좌우
+    padding: 10px 20px 30px 40px;    :상,우,하,좌
+    
+    -박스모델 가운데정렬
+    margin: 0(다른숫자 가능) auto;
+
+    4.box-sizing                    :안쪽여백과 테두리를 사이즈에 포함여부
+        box-sizing: content-box     :포함하지않는다
+        box-sizing: border-box      :포함(권장)
+
+    5.width                         :가로사이즈
+    6.height                        :세로사이즈
+
+    7.display                       :표시방법
+        display:inline              :한줄에 포함된 배치
+            (default)inline 마크업: <span>, <img>,<a>등 
+            -width,height 적용 불가
+        display:block               :한줄을 차지한 배치
+            (default)block 마크업:<div>,<h>,<p>,<ul>/<ol>/<li>등
+            -width,height 적용 가능
+        display:inline-block        :한줄에 포함되고 사이즈가 적용된 배치
+            inline+block
+            -width,height 적용가능
+        display:none                :표시x
+
 4.css 색상 표현하는 방법
     1.색상이름:red 
     2.헥사코드: #9b1010
