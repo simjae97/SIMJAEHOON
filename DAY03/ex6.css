@@ -1,0 +1,119 @@
+img{
+    height: 50pt;
+}
+.s1{
+    padding: 50pt 0 20pt 0;
+    display: block;
+    text-align: center;
+}
+
+.s2{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(209, 196, 196);
+    padding: 50pt 30pt 40pt 30pt; 
+    width: 300pt;
+
+}
+
+.c1{
+    border: none;
+    border-bottom: 2px solid rgb(194, 191, 191);
+    width: 250pt;
+    font-size: 12pt;
+    margin-bottom: 10pt;
+    padding-bottom: 3pt;
+    font-weight: bold;
+}
+.s3{
+    padding-top: 3pt;
+    display: block;
+    text-align: left;
+    font-size: 10pt;
+    padding-left: 18pt;
+    color: rgb(17, 16, 16);
+    margin-bottom: 19pt;
+}
+
+.s4{
+    border: 1px solid yellow;
+    background-color: yellow;
+    height: 16pt;
+    padding-top: 7pt;
+    padding-bottom: 7pt;
+    margin-bottom: 15pt;
+    list-style: none;
+    border-radius: 5pt;
+    margin-right: 20pt;
+    margin-left: -10pt;
+}
+.s5{
+    background-color: rgba(216, 216, 211,0.3);
+    height: 16pt;
+    padding-top: 7pt;
+    padding-bottom: 7pt;
+    margin-bottom: 20pt;
+    list-style: none;
+    margin-right: 20pt;
+    margin-left: -10pt;
+    border-radius: 5pt;
+}
+
+.a1{
+    text-decoration: none;
+    color: black;
+}
+.s6{
+    font-size: 8pt;
+    text-align: right;
+}
+
+.a2{
+    color: black;
+    text-decoration: none;
+    margin-right: 2pt;
+    margin-left: 2pt;
+}
+
+.s7{
+    text-align: center;
+    margin: 20pt 0;
+}
+
+.a3{
+    font-size: 8pt;
+    color: darkgray;
+    text-decoration: none;
+    margin-right: 10pt;
+}
+
+.a4{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 8pt;
+    margin-right: 10pt;
+}
+
+select{
+    border: 0;
+    color: darkgray;
+    font-size: 8pt;
+}
+
+.s8{
+    padding-top: 10pt;
+    border: 0;
+    color: darkgray;
+    font-size: 8pt;
+}
+
+.s9{
+    color: black;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.s10{
+    margin-top: 5pt;
+}
