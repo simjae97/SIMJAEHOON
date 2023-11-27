@@ -42,22 +42,18 @@ img{
     height: 16pt;
     padding-top: 7pt;
     padding-bottom: 7pt;
-    margin-bottom: 15pt;
     list-style: none;
     border-radius: 5pt;
-    margin-right: 20pt;
-    margin-left: -10pt;
+    margin: 30pt 20pt 15pt -10pt;
 }
 .s5{
     background-color: rgba(216, 216, 211,0.3);
     height: 16pt;
     padding-top: 7pt;
     padding-bottom: 7pt;
-    margin-bottom: 20pt;
     list-style: none;
-    margin-right: 20pt;
-    margin-left: -10pt;
     border-radius: 5pt;
+    margin: 0 20pt 20pt -10pt;
 }
 
 .a1{
