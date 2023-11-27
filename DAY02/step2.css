@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* css주석 */
+/* 
+    1.어디의: body
+    2.무엇을:background-color
+    3.어떻게:
+*/
+body{
+    background-color:red;
+}

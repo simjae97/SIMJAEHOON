@@ -1,0 +1,98 @@
+<!-- 주석L 코드 설명할 때  -->
+<!-- 
+    vscode 에디터 자동 완성: ctrl+space - 코드 추천
+ -->
+
+<!DOCTYPE html> <!-- 1. HTML5 버전 선언 -->
+
+<html>          <!-- 2. HTML 시작 태그 -->
+
+    <head>      <!-- 3. HTML 문서의 다양한 정보를 작성 태그 -->
+        <meta charset='utf-8'>  
+        <!-- 4. HTML 문서의 인코딩(HTML이 외국에서 만들어졌기때문에 한글로 번역)  UTF-8 한글 지원 -->
+
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+        <title>이젠컴퓨터 예제</title> <!-- 5. HTML 문서의 제목 -->
+        
+        <meta name='viewport' content='width=device-width, initial-scale=1'> <!--디바이스에 따른 반응형-->
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'> <!--css파일 불러오기-->
+        <script src='main.js'></script> <!--스크립트 파일 불러오기-->
+
+    </head>     <!-- 3. HTML 정보 끝 태그 -->
+
+    <body>      <!-- 6. HTML 본문(내용) 시작-->
+            
+        <!--이미지 출력-->
+        <!--
+            상대경로: 현재 파일 기준으로의 이미지 위치
+                ../:상위폴더 이동
+                    ../폴더명/파일명:상위 폴더 이동 후 해당 폴더 안에 있는 파일 위치
+                ./ or 생략: 현재 폴더
+            절대경로: 루트 파일 기준으로의 이미지 위치
+            C:\Users\504\Desktop\SIMJAEHOON\capizou.png
+
+            에디터가 지원
+        -->
+        <img src="../capizou.png"/>
+        <img src="../DAY01/capizou.png"/>
+
+        <!-- 2. 음성 파일 출력-->
+        <audio src="오디오.mp3" controls autoplay></audio>
+
+        <!--3. 영상 파일 출력-->
+        <video src="비디오.mp4" controls muted autoplay></video>
+
+        <!-- 4. 외부 멀티 미디어 출력-->
+        <!--유튜브 퍼가기-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wC3hSSJ9dJY?si=3h0QOdGOSDni1YZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.389994487019!2d126.85119457645176!3d37.30958873881931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f26eca4e801%3A0xcc760a7a473e93bf!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1700790237993!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br/><br/><br/><br/><br/>
+        <!-- ============입력관련태그=====================================-->
+        <!-- 입력상자-->
+        <form>                      <!--양식(폼) 시작-->
+        <input value="유재석" readonly/> <!--value= 값을 미리 입력해둠,readonly=수정불가능(읽기불가)-->
+        <input type="text" placeholder="부서번호" disabled/>        <!--텍스트 입력창--> <!--placeholder=가이드라인 disable=사용불가능-->
+        <input type="password" autofocus/>    <!--패스워드 입력창--> <!--커서오토포커스-->
+        <input type="email" maxlength="5" minlength="3"/>       <!--이메일 입력창(제출시 유효성 검사)--><!--maxlength 최대길이 minlength 최소길이-->
+        
+        <input type="color"/>       <!--색상 입력창-->
+        <br/>
+        <input type="date"/>        <!--날짜 입력창-->
+        <input type="datetime-local"/><!--날짜/시간 입력창-->
+        <input type="month"/>       <!--날짜(월) 입력창-->
+        <input type="time"/>        <!--시간입력창-->
+        <input type="week"/>        <!--주-->
+        <br/>
+        <input type="range"/>       <!--범위 스크롤-->
+        <input type="number">       <!--숫자증감-->
+        <input type="file" multiple/>`       <!--첨부파일 입력--><!--multiple=여러개파일올리기-->
+        <br/>
+        <input type="radio" name = "aaaa" checked/>  예     <!--원형체크 버튼(단일선택 = 여러개 radio타입의 name을 일치화 해야함)--><!--checked=디폴트를 체크로-->
+        <input type="radio" name = "aaaa"/> 아니요
+
+        <input type="checkbox" name ="aaa"/> 뉴스 <!--네모체크버튼(복수선택= 여러개 check박스타입의 name이 일치해도 복수선탱가능 )-->
+        <input type="checkbox" name = "aaa"/> 지인추천
+        <input type="checkbox" name = "aaa" /> 검색
+
+        <br/>
+        <input type="button"/>      <!--일반 버튼 입력/클릭-->
+        <input type="submit"/>      <!--전송/제출 버튼 입력/클릭-->
+        <input type="reset"/>       <!--초기화 버튼 입력/클릭 -->
+        <br/>
+
+        <textarea rows="5" cols="10"></textarea> <!--긴글 텍스트-->
+
+        <br/>
+        <select > <!--목록 상자-->
+            <option>naver</option>
+            <option>kakao</option>
+            <option>nate</option>
+        </select>
+        </form>                     <!--양식(폼) 종료-->
+
+
+
+    </body>     <!-- 6. HTML 본문 끝  -->
+    
+</html>         <!-- 2. HTML 끝 태그 -->
