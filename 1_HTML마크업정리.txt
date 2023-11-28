@@ -114,3 +114,17 @@ C:\Users\504\Desktop\SIMJAEHOON\DAY01\capizou.png
     -필드 구역 만들기
     -필드 제목 
         <legend></legend>
+
+12.의미없는 구역잡기 (논 시맨틱 태그)
+    <div>: 블록
+
+    <span>:인라인
+
+13. 레이아웃용 시맨틱 태그                   
+    1.<header>                            <div id="header">          
+    2.<nav>                               <div id="nav">
+    3.<main>                              <div id="main">
+    4.<article>             vs            <div id="article">
+    5.<aside>                             <div id="aside">
+    6.<footer>                            <div id="footer">
+    7.<section>                           <div id="section">

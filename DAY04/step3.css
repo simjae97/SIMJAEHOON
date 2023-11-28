@@ -1,0 +1,40 @@
+/* *{ 작업 씉났으면 삭제
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 10px;
+} */
+#webwrap{
+
+    width: 900px; /*가로 사이즈 */
+    margin: 50px auto; /*박스 가운데 정렬 */
+}
+header,#header{
+    background-color: blue;
+}
+
+nav,#nav{
+    background-color: brown; color: white;
+}
+
+main,#main{background-color: orange;
+    flex-wrap: nowrap; /*기본값이기에 생략가능*/
+    display: flex;
+    height: 800px;
+}
+
+article,#article{
+    width: 600px; /*부모가 900에서 600사용*/
+}
+
+aside,#aside{
+    width: 300px; /*부모900에서 300사용*/
+}
+
+footer,#footer{
+    background-color: black; color: #FFFFFF;
+}
+
+
+
+
+

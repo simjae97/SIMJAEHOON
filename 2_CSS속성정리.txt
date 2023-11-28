@@ -66,27 +66,57 @@ CSS : Cascading StyleSheet
     padding: 10px 20px;             :상하,좌우
     padding: 10px 20px 30px 40px;    :상,우,하,좌
     
-    -박스모델 가운데정렬
+    -박스모델 가운데(block)정렬
     margin: 0(다른숫자 가능) auto;
+    -박스모델 가운데(inline) 정렬
+    text-alignL center;
 
     4.box-sizing                    :안쪽여백과 테두리를 사이즈에 포함여부
-        box-sizing: content-box     :포함하지않는다
-        box-sizing: border-box      :포함(권장)
+        box-sizing: content-box;    :포함하지않는다
+        box-sizing: border-box;     :포함(권장)
 
     5.width                         :가로사이즈
     6.height                        :세로사이즈
 
     7.display                       :표시방법
-        display:inline              :한줄에 포함된 배치
+        display:inline;             :한줄에 포함된 배치
             (default)inline 마크업: <span>, <img>,<a>등 
             -width,height 적용 불가
-        display:block               :한줄을 차지한 배치
+        display:block;              :한줄을 차지한 배치
             (default)block 마크업:<div>,<h>,<p>,<ul>/<ol>/<li>등
             -width,height 적용 가능
-        display:inline-block        :한줄에 포함되고 사이즈가 적용된 배치
+        display:inline-block;       :한줄에 포함되고 사이즈가 적용된 배치
             inline+block
             -width,height 적용가능
-        display:none                :표시x
+        display:none ;              :표시x
+        
+
+        display:flex;               :하위 요소들을 배치
+            1, flex-wrap            :하위 요소 줄바꿈 여부
+                nowrap              :하위 요소 줄바꿈x(default)
+                wrap                :하위 요소줄바꿈o
+                wrap-severse        :하위 요소 줄바꿈o+역방향
+            
+            2.flex-direction        :하위 요소들의 배치 방향
+                row                 :하위 요소 가로배치(default)
+                column              :하위 요소들을 새로배치
+                row-reverse         :하위 요소 가로 배치+역방향
+                column-reverse      :하위 요소 세로 배치+역방향
+
+            3.justify-content       :하위요소 가로 정렬
+                flex-start          :왼쪽부터(default) 정렬
+                flex-end            :오른쪽부터 정렬
+                center              :가운데 정렬 
+                space-between       :양쪽끝에 여백없이 사이 여백 균등 정렬
+                space-arround       :양쪽끝에 여백은 절반으로 하고 사이 여백 균등정렬
+                space-evenly        :양쪽끝 여백 포함 여백 균등 정렬
+            
+            4.align-items           :하위요소 세로정렬
+                stretch             :자식 요소는 컨테이너의 높이만큼 자동으로 늘어남(고정사이즈가 없을시)(default)
+                flex-start          :윗변 정렬, 사이즈 자동으로 안 늘어남
+                flex-end            :밑변 정렬, 사이즈 자동으로 안 늘어남
+                center              :중앙정렬, 사이즈 자동으로 안 늘어남
+                baseline            :컨텐츠의 밑줄을 기준선으로 정렬
 
 4.css 색상 표현하는 방법
     1.색상이름:red 
