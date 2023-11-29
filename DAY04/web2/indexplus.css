@@ -3,11 +3,12 @@
     border: 2px solid red;
     padding: 10px;
 }   */
-li{list-style-type: none;}
-#meunus a{color: black; text-decoration: none;}
+
+a{color: black; text-decoration: none;}
 #top a{color: white; text-decoration: none;}
-ul{padding: 0;margin: 0;}
 #f{color: white;}
+ul,li{padding: 0; margin: 0;}
+li{list-style-type: none;}
 
 #header{
     width: 1280px; /*ㅎ표준 pc 모니터 사이즈*/
@@ -63,11 +64,7 @@ ul{padding: 0;margin: 0;}
 
     font-size:11pt;
 }
-ul,li{padding: 0; margin: 0;}
-li{list-style-type: none;}
-/* 1.선택자를 여러개 선택할때는 쉼표 구분  */
-/* 2.하위 선택자를 선택할경우에는 상위선택자 하위선택자(띄어쓰기)구분 */
-a{color: black; text-decoration: none;}
+
 
 #main{
     width: 1280px;
