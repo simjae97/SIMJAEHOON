@@ -25,6 +25,10 @@ CSS : Cascading StyleSheet
                 *<마크업<class<id
 3.CSS속성의 종류
     1.background-color: 배경색
+    1-2.background-image:url("이미지 경로") : 배경 이미지
+        -background-repeat:여백이 있을경우 배경 반복 여부
+            repeat(default),no-repeat
+        -background position:(좌우(left center right), 상하(top center bottom))
     ====폰트관련=======
     2.font-family                   : 폰트
         -웹폰트(눈누 추천)
@@ -49,6 +53,9 @@ CSS : Cascading StyleSheet
         overline 윗줄
     12.text-shadow                  :텍스트 그림자(강조)
         x축 y축 흐림정도 색상
+    13.list-style-type              :목록 사용시 글머리
+
+
     =====박스 모델 관련======
     1.border
         :두께 선 종류 색상
@@ -117,6 +124,12 @@ CSS : Cascading StyleSheet
                 flex-end            :밑변 정렬, 사이즈 자동으로 안 늘어남
                 center              :중앙정렬, 사이즈 자동으로 안 늘어남
                 baseline            :컨텐츠의 밑줄을 기준선으로 정렬
+    8.box-shadow            :박스모델 그림자
+        x축 y축 흐림정도 색상
+
+    9. overflow                     :하위요소가 상위요소[고정사이즈] 보다 커질때
+        visible[기본값],hidden,scroll,auto
+            
 
 4.css 색상 표현하는 방법
     1.색상이름:red 
