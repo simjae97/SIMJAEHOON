@@ -1,0 +1,170 @@
+
+
+
+#article1{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+#stu{
+    width: 100%;
+    vertical-align: auto;
+}
+#imgtext{
+    /* position: absolute;
+    top: 40%;
+    left: 50%; */
+    width: 100%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-image: url(../web4/img/sub_intro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+#article2{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+
+}
+#article3{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    
+}
+#section1 img{
+    width: 600px;
+    margin-bottom: 80px;
+    
+}
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 10px 20px;
+    
+}
+#hhhh h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 20px;
+    
+}
+#main3{
+    background-color: #eeeeee;
+}
+b{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+#gggg h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0px;
+    padding-top: 100px;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0px;
+}
+#hhhh p{
+    margin: 10px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#tttt img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#header1{
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+#header2{
+    margin-top: 30px;
+    
+}
+#header2 a{
+    display: flex;
+}
+#the{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#std{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#header3{
+    display: flex;
+    align-items: center;
+}
+#header3 a{
+    font-size: 14px;
+    text-shadow: 0 0;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+#footer{
+    background-color: #292C32;
+    justify-content: center;
+    display: flex;
+    padding: 25px 0 50px;
+    margin-top: 20px;
+}
+
+#footer1{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#footer1 a{
+    color: white;
+}
+#customer{
+    text-shadow: 0 0;
+}
+#customer li{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#address{
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+#address div{
+    margin-bottom: 15px;
+}
+
+#logo{
+    padding-top: 10pt;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,98 @@
+/* *{
+    border: 2px solid red;
+} */
+/* 공통부분   */
+*{
+    box-sizing: border-box; /*안쪽여백,테두리를 포함한 사이징*/
+    font-size: 12px;
+}
+
+a{color: black; text-decoration: none;}
+li{list-style-type: none;}
+/* 헤더 */
+#header{
+    width: 100%; /*기본값, 부모요소의 100%사용*/
+}
+#header #topMenu{
+    display: flex;
+    flex-direction: row; /*가로배치(default*/
+    justify-content: flex-end;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    padding: 15px;
+    margin-right: 10px;
+}
+#header #topMenu >li >span {
+    padding: 0px 10px;
+}
+
+#header #mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky; /*스크롤시 위치 고정*/
+    top:0px;
+    /*  sticky 주의할점[전제조건] 
+        1.상위 요소의 높이 사이즈 안에서 고정 <-부모 안에서만 놈
+        2.위치 속성 최소 1개필수: top,right,left,bottom
+        3.상위 요소가 overflow 속성 사용 금지.
+    */
+}
+
+#header #mainMenu1{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+#header #mainMenu > ul{
+    width: 1000px;
+}
+
+#header #mainMenu ul li:hover ul{
+    display: block;
+}
+#mainMenu > ul> li{
+    position: relative;
+}
+.subMenu{
+    padding:0px;
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    width: 80px;
+    background-color: white;
+    padding-top: 25px;
+    display: none;
+
+}
+.subMenu li{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#searchbox img{
+    width: 20px;
+}
+#header #mainMenu >form{ border-bottom: 1px solid black;}
+#header #mainMenu >form>input{border: none; padding: 10px; font-size:16px;}
+*:focus{outline: none;}
+.redfont{
+    color: red;
+}
+
+
+/* 메인부분 */
+#mainwrap{
+    margin: 0 auto;
+    width: 1620px;
+}
+#mainimg{
+    width: 100%;
+}
+
+#footer #inner{
+    width: 1400px;
+    margin: 0 auto;
+}
