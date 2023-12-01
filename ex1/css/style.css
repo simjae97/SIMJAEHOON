@@ -83,3 +83,8 @@
     font-size: 17px;
     font-weight: bold;
 }
+
+#mainwrap{
+    width: 1500px;
+    margin: 0 auto;
+}

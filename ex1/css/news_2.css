@@ -26,3 +26,20 @@
 #cateNav>p>span{
     font-weight:bold;
 }
+/*탭 버튼*/
+#tapWrap{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 70px;
+}
+.tap a{
+    margin-right: 30px;
+    color:#878787;
+}
+#pageTap{
+    border-bottom: 2px solid #de121c;
+    color: black;
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
