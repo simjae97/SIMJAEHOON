@@ -1,0 +1,88 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    font-weight: bold;
+    
+}
+
+#header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /*생략 가능*/
+}
+
+#aside{width: 250px;}
+#article{width: 1000px;}
+
+
+#logo1{
+    width: 300px;
+}
+
+#a1{
+    display: flex;
+    justify-content: flex-end;
+}
+#a2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+#b1{
+    font-size: 11pt;
+}
+
+#main_img{
+    background-image: url("img/main_img.png");
+    width: 2000pt;
+    height: 200pt;
+}
+
+#a10{
+    display: flex;
+}
+
+li{list-style: none;}
+
+#footer{
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;
+    background-color: black;
+    justify-content: center;
+}
+#v1{
+    color: white;
+}
+
+#v2{
+    
+    text-align: center;
+}
+
+#t1{
+    
+    background-color: black;
+}
+
+#footer li{
+    color: white;
+}
+#footer{
+    width: 1280px;
+    margin: 10pt auto;
+    justify-content: space-between;
+    display: flex;
+}

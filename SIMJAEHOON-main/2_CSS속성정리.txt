@@ -1,0 +1,137 @@
+CSS : Cascading StyleSheet
+    - HTML(뼈대) -http
+    - CSS(스타일-옷)
+    - JS(행위/행동-이벤트)
+        - css와 js는 HTML에 포함된 구조
+
+1.CSS 적용하는 방법
+    1.CSS파일을 만들어 HTML <head>태그에 호출 (권장)
+        <link rel="stylesheet" href="css파일경로">
+    2.HTML <head>태그에 <style> 태그를 이용하는 방식
+        <style></style>
+    3.HTML <마크업 style=""> style속성을 이용하는 방식
+        style=""
+2. CSS 작성하는 방법
+        어디의{무엇을:어떻게;}
+        1.어디의[선택자]
+            1.*         :모든곳에 적용
+            2.마크업    :해당 마크업만 적용   
+            3.class     :해당 class속성에 동일한 이름을 갖는 마크업
+            4.id        :해당 id속성에 동일한 이름을 갖는 마크업 적용
+            class명과 id의 이름은 원하는대로(영문권장,의미부여권장)
+            <input class="titleInput">
+            <table id="boardTable">
+            식별자의 우선순위(중복이 있을 경우) 
+                *<마크업<class<id
+3.CSS속성의 종류
+    1.background-color: 배경색
+    1-2.background-image:url("이미지 경로") : 배경 이미지
+        -background-repeat:여백이 있을경우 배경 반복 여부
+            repeat(default),no-repeat
+        -background position:(좌우(left center right), 상하(top center bottom))
+    ====폰트관련=======
+    2.font-family                   : 폰트
+        -웹폰트(눈누 추천)
+        예시@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    3.font-size                     :폰트크기[px:픽셀]
+    4.font-style:italic;            :기울기
+    5.font-weight:bold;             :진하게
+    6.color                         :색상
+    7.word-spacing                  :어간(단어간격)[px:픽셀]
+    8.letter-spacing                :자간(글자간격)[px:픽셀]
+    9.line-height                   :줄간격[%]
+    10.text-align                   :가로정렬
+        left,right,center           :좌 우 가운데정렬
+    11. text-decoration             :텍스트 선 긋기
+        line-through 취소선
+        underline 밑줄
+        overline 윗줄
+    12.text-shadow                  :텍스트 그림자(강조)
+        x축 y축 흐림정도 색상
+    13.list-style-type              :목록 사용시 글머리
+
+
+    =====박스 모델 관련======
+    1.border
+        :두께 선 종류 색상
+        border-top, border-right, border-bottom,border-left
+        :선 종류
+        solid, dotted, double, dashed
+    2.padding                       :안쪽여백 
+        padding-top,padding-right,padding-bottom,padding-left
+    3.margin                        :바깥여백
+        margin-top,margin-right,margin-bottom,margin-left
+    
+    2,3효율적 표기
+
+    padding: 10px;                  :전체
+    padding: 10px 20px;             :상하,좌우
+    padding: 10px 20px 30px 40px;    :상,우,하,좌
+    
+    -박스모델 가운데(block)정렬
+    margin: 0(다른숫자 가능) auto;
+    -박스모델 가운데(inline) 정렬
+    text-alignL center;
+
+    4.box-sizing                    :안쪽여백과 테두리를 사이즈에 포함여부
+        box-sizing: content-box;    :포함하지않는다
+        box-sizing: border-box;     :포함(권장)
+
+    5.width                         :가로사이즈
+    6.height                        :세로사이즈
+
+    7.display                       :표시방법
+        display:inline;             :한줄에 포함된 배치
+            (default)inline 마크업: <span>, <img>,<a>등 
+            -width,height 적용 불가
+        display:block;              :한줄을 차지한 배치
+            (default)block 마크업:<div>,<h>,<p>,<ul>/<ol>/<li>등
+            -width,height 적용 가능
+        display:inline-block;       :한줄에 포함되고 사이즈가 적용된 배치
+            inline+block
+            -width,height 적용가능
+        display:none ;              :표시x
+        
+
+        display:flex;               :하위 요소들을 배치
+            1, flex-wrap            :하위 요소 줄바꿈 여부
+                nowrap              :하위 요소 줄바꿈x(default)
+                wrap                :하위 요소줄바꿈o
+                wrap-severse        :하위 요소 줄바꿈o+역방향
+            
+            2.flex-direction        :하위 요소들의 배치 방향
+                row                 :하위 요소 가로배치(default)
+                column              :하위 요소들을 새로배치
+                row-reverse         :하위 요소 가로 배치+역방향
+                column-reverse      :하위 요소 세로 배치+역방향
+
+            3.justify-content       :하위요소 가로 정렬
+                flex-start          :왼쪽부터(default) 정렬
+                flex-end            :오른쪽부터 정렬
+                center              :가운데 정렬 
+                space-between       :양쪽끝에 여백없이 사이 여백 균등 정렬
+                space-arround       :양쪽끝에 여백은 절반으로 하고 사이 여백 균등정렬
+                space-evenly        :양쪽끝 여백 포함 여백 균등 정렬
+            
+            4.align-items           :하위요소 세로정렬
+                stretch             :자식 요소는 컨테이너의 높이만큼 자동으로 늘어남(고정사이즈가 없을시)(default)
+                flex-start          :윗변 정렬, 사이즈 자동으로 안 늘어남
+                flex-end            :밑변 정렬, 사이즈 자동으로 안 늘어남
+                center              :중앙정렬, 사이즈 자동으로 안 늘어남
+                baseline            :컨텐츠의 밑줄을 기준선으로 정렬
+    8.box-shadow            :박스모델 그림자
+        x축 y축 흐림정도 색상
+
+    9. overflow                     :하위요소가 상위요소[고정사이즈] 보다 커질때
+        visible[기본값],hidden,scroll,auto
+            
+
+4.css 색상 표현하는 방법
+    1.색상이름:red 
+    2.헥사코드: #9b1010
+    3.RGB색상: rgb(0~255,0~255,0~255)

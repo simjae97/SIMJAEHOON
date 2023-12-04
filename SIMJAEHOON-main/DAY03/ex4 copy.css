@@ -1,0 +1,29 @@
+.product{
+    width: 400px;
+    border: solid 1px red;
+    margin: 20px;
+}
+.pimg{width:400px;}
+
+.row2{
+    font-size: 20px;
+    font-weight: bold;
+    border-top: solid 1px red;
+    padding: 30px 10px 10px 10px;
+}
+
+.row3{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.row4{
+    padding: 10px; line-height: 160%;
+}
+
+.row5{
+    padding: 10px;
+}
+.orange{
+    color: orange; font-weight: 800;
+}

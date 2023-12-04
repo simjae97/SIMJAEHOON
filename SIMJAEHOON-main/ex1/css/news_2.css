@@ -1,0 +1,65 @@
+#cateTitle{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+#cateTitle>h3{
+    padding: 80px 0 20px;
+    font-size: 50px;
+}
+#cateTitle>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#cateTitle>p>span{
+    font-weight: bold;
+}
+#cateNav{
+    position: relative;
+}
+#cateNav>p{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 14px;
+}
+#cateNav>p>span{
+    font-weight:bold;
+}
+/*탭 버튼*/
+#tapWrap{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 70px;
+}
+.tap a{
+    margin-right: 30px;
+    color:#878787;
+}
+#pageTap{
+    border-bottom: 2px solid #de121c;
+    color: black;
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
+
+#mainwrap{
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+#articlewrap{
+    width: 1500px;
+    text-align: center;
+}
+
+#articletitle{
+    width: 1200px;
+    background-color: #3c3c3c;
+    margin: 0 auto;
+}
+
+#articlemain > img{
+    width: 1120px;
+}

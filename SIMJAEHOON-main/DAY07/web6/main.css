@@ -1,0 +1,235 @@
+/* *{
+    border: 2px solid red;
+} */
+/* 공통부분   */
+*{
+    box-sizing: border-box; /*안쪽여백,테두리를 포함한 사이징*/
+    font-size: 12px;
+}
+
+a{color: black; text-decoration: none;}
+li{list-style-type: none;}
+/* 헤더 */
+
+#topMenu{
+    display: flex;
+    flex-direction: row; /*가로배치(default*/
+    justify-content: flex-end;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    padding: 15px;
+    margin-right: 10px;
+}
+#topMenu >li >span {
+    padding: 0px 10px;
+}
+
+#mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky; /*스크롤시 위치 고정*/
+    top:0px;
+    /*  sticky 주의할점[전제조건] 
+        1.상위 요소의 높이 사이즈 안에서 고정 <-부모 안에서만 놈
+        2.위치 속성 최소 1개필수: top,right,left,bottom
+        3.상위 요소가 overflow 속성 사용 금지.
+    */
+    background-color: rgba(255,255,255,0.8);
+    /* opacity:전체 투명도 */
+}
+
+#mainMenu1{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+#mainMenu > ul{
+    width: 1000px;
+}
+
+#mainMenu ul li:hover ul{
+    display: block;
+}
+#mainMenu > ul> li{
+    position: relative;
+}
+.subMenu{
+    padding:0px;
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    width: 80px;
+    background-color: white;
+    padding-top: 25px;
+    display: none;
+
+}
+.subMenu li{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#searchbox img{
+    width: 20px;
+}
+#mainMenu >form{ border-bottom: 1px solid black;}
+#mainMenu >form>input{border: none; padding: 10px; font-size:16px;}
+*:focus{outline: none;}
+.redfont{
+    color: red;
+}
+
+
+/* 메인부분 */
+#mainwrap{
+    margin: 100px auto;
+    width: 1620px;
+}
+#mainimg{
+    width: 100%;
+}
+#mainwrap .title{
+    text-align: center;
+    font-size: 18px; font-weight: bold;
+}
+#mainwrap .comment{
+    text-align: center; color: #858585;
+    margin-top: 10px;
+}
+
+#mainwrap .items{
+    margin-top: 50px;
+}
+
+.item{
+    width: 360px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item img{ width: 100%;}
+.colorReview{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.colorReview > .review{
+    color: #858585;
+}
+.colorReview .colora{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 2px;
+    border: 1px solid #858585;
+}
+
+.colorReview .color1{
+    background-color: black;
+}
+.colorReview .color2{
+    background-color: red;
+}
+
+.colorReview .color3{
+    background-color: cyan;
+
+}
+ .icon img{
+    width: 25px;
+ }
+ .nameSize{
+    margin: 10px 0px 20px 0px;
+ }
+ 
+ .nameSize .pSize{
+    font-size:11px; color: #999999;
+ }
+
+ .price > del{
+    color: #999999;
+ }
+ .price{ position: relative;}
+ .price > .discount{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+ }
+ .price >p{
+    margin-top: 5px;
+ }
+/* 푸터 */
+#footer{
+    background-color: #f7f7f7;
+}
+#addr{
+    text-align: center;
+    margin: 30px 0 50px 0; color: #898989;
+}
+#footer #inner{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px 80px 0px;
+}
+#footer #inner h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    right: 0px;
+}
+
+#popup >li{
+    width: 25px;
+    height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #898989;
+    text-align: center;
+    position: relative;
+}
+
+#popup >li >img{
+    width: 70%;
+    padding-top: 3px;
+}
+
+#popup >li > span{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 10px;
+    color: white;
+    padding-top: 2px;
+    width: 80px; height: 20px;
+    background-color: black;
+    border-radius: 15px;
+    display: none;
+}
+
+#popup > li:hover > .popupsub{
+display: block;
+}
+
+#popup #plus{
+    border-bottom: none;
+}
+#popup #plus2{
+    border-top: none;
+}

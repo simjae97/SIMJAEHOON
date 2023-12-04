@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='web5-1.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="headerLogo">
+                <a href="https:/www.naver.com">
+                    <img src="img/KakaoTalk_20231130_095945865.png">
+                </a>
+            </div>
+        </div>
+        <form id="main">
+            <h5>아이디</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />
+                <span>@naver.com</span>
+            </div>
+
+            <h5>비밀번호 </h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25"/>
+                <span class="inputIcon" id="paIcon"></span>
+            </div>
+
+            <h5>비밀번호 </h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25"/>
+                <span class="inputIcon" id="paConfirm"></span>
+            </div>
+
+            <h5>이름</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />
+            </div>
+            <h5>생년월일</h5>
+            <div id="birth">
+                <div class="inputBox birhtY">
+                    <input type="text" maxlength="4" placeholder="년(4자리)"/>
+                </div>
+                <div class="inputBox birthM">
+                    <select>
+                        <option value="" class="dis">월</option>
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                    </select>
+                </div>
+                <div class="inputBox birthD">
+                    <input type="number" maxlength="2" placeholder="일" />
+                </div>
+            </div>
+            <h5>성별</h5>
+            <div class="inputBox">
+                <select>
+                    <option selected class="dis">성별</option>
+                    <option>남</option>
+                    <option>여</option>
+                </select>
+            </div>
+            <div><h5>본인 확인 이메일<span>(선택)</span></h5></div>
+            <div class="inputBox">
+                <input type="text" maxlength="25" placeholder="선택입력" />
+            </div>
+
+            <h5>휴대 전화</h5>
+            <div class="inputBox">
+                <select>
+                    <option>대한민국 +82</option>
+                    <option>미국 +1x</option>
+                </select>
+            </div>
+            <div id="phone">
+                <div class="inputBox">
+                    <input type="text" maxlength="25" placeholder="전화번호 입력" />
+                </div>
+                <input type="button" value="인증번호 받기"> 
+            </div>
+            <h5></h5>
+            <div class="inputBox" id="authbox" >
+                <input type="text" maxlength="25" placeholder="인증번호 입력하세요" disabled />
+            </div>
+            <input id="signup"type="submit" value="가입하기" />
+        </form>
+        <div id="footer">
+            <div id ="footerBox">
+                <div id="ftTop">
+                    <a href="#">이용약관 </a>
+                    <a href="#">개인정보처리방침 </a>
+                    <a href="#">책임의 한계와 법적고지 </a>
+                    <a href="#">회원정보 고객센터 </a>
+                </div>
+                <div id="ftBottom">
+                    <img src="img/KakaoTalk_20231130_095945865.png"> 
+                    <span>copyright © naver corp. all rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

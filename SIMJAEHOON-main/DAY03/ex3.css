@@ -1,0 +1,25 @@
+img{
+    width: 300px;
+}
+
+ul{
+    border: 1px solid rgb(93, 171, 173);
+    background-color: rgb(35, 37, 37);
+    width: 600px;
+    padding: 20px 20px 20px 0;
+}
+
+.c1{
+    padding-left: 10pt;
+    color: white;
+    font-size: 15pt;
+    margin-bottom: 7pt;
+}
+
+.s2{
+    color: orange;
+}
+.s1{
+    font-size: 30pt;
+    color: orange;
+}

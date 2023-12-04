@@ -1,0 +1,46 @@
+.box1,.box2,.box3{
+    width: 100px; height: 100px;
+    background-color: #888888;
+    border: yellow solid 1px;
+    
+}
+
+#box2{
+    position: relative; /*위치 relative:상대적인 위치 */
+    top: 50px; left:50px; /*위치 좌표*/
+    background-color: aqua;
+}
+
+#box5{
+    position: absolute; /*절대위치*//*자리도 사라짐*/
+    top:50px; left: 50px;
+    background-color: blueviolet;
+}
+
+/* 
+    position: static   기본값, 순서대로
+    position: relative 상대위치: 자신의 원 위치로 부터 기준
+    position: absolute 절대위치: 부모의 위치 기준
+    position: fixed    고정위치: 브라우저 기준으로 고정
+    position: sticky; 해당요소가 가려질경우 위치고정
+        top bottom left right
+    z-index:겹쳤을 경우 우선순위번호 (높을수록 상단)
+
+*/
+
+#box8{
+    position: static; /*static: 작성 순서대로[default]*/
+    top:50px; left: 50px; /*위치 좌표 사용 불가능*/
+    background-color: brown;
+}
+
+#box11{
+    position: fixed; /*고정위치*/
+    background-color: antiquewhite;
+    right: 10px; bottom: 10px;
+}
+
+.parent{
+    position: relative;
+}
+

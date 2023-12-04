@@ -1,0 +1,148 @@
+/* 
+*{
+    border: 2px solid red;
+    padding: 10px;
+}   */
+
+a{color: black; text-decoration: none;}
+#top a{color: white; text-decoration: none;}
+#f{color: white;}
+ul,li{padding: 0; margin: 0;}
+li{list-style-type: none;}
+
+#header{
+    width: 1280px; /*ㅎ표준 pc 모니터 사이즈*/
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#main_logo img{ /* main_logo id 하위에 img 마크업 선택 */
+    margin-top:5px ;
+}
+#main_menu{ /* 헤더의 오른쪽 메인 메뉴 */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 700px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+#top_menu{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+#top_menu span{ margin:5px;}
+#footer{ background-color: #05354E;
+    padding-top: 20px;
+
+}
+#ft_box{
+   
+    margin: 0 auto;
+   
+    color: white;
+    font-size: 12px;
+    width: 1280px;
+    align-items: center;;
+}
+#ft_box ul{display: flex;}
+#top li {padding:10px ;}
+#bt{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#top_menu a{
+    margin-right: 5px;
+}
+
+*{
+
+    font-size:11pt;
+}
+
+
+#main{
+    width: 1280px;
+    margin: 5pt auto;
+    display: flex;
+    justify-content: space-between;
+}
+#aside{
+    width: 250px;
+}
+#article{width: 480px; }
+#article2{width: 480px; }
+
+#aside h4{
+    background-color: #0CA9A3;
+    font-size:13pt;
+    color: white;
+    padding: 12px 0px 18px 10px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+#aside h6{
+    border-top: 2px solid black;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0 10px 20px;
+    
+    
+}
+
+#aside li{
+    width:280px;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 10pt;
+}
+#aside ul{
+    margin-top: -25pt;
+}
+
+#article h4{
+    font-size: 15pt;
+    margin-top: 0;
+    padding-bottom: 5pt;
+    border-bottom: 2px solid black;
+}
+
+#article ul{
+    margin-top: -10pt;
+}
+#article li{
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#article2 h4{
+    font-size: 15pt;
+    margin-top: 0;
+    padding-bottom: 5pt;
+    border-bottom: 2px solid black;
+}
+#article2 ul{
+    margin-top: -10pt;
+    flex-wrap:wrap;
+}
+
+#article2 li{
+    margin-bottom: 20px;
+    width: 170pt;
+    display: inline-block;
+    margin-bottom: 30pt;
+    margin-right: 5pt;
+
+}
+#main_img{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}

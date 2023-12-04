@@ -1,0 +1,37 @@
+.container{
+    display: flex; /*하위 요소들 가로배치*/
+    border: 2px red solid;
+    /* width: 100% (기본값) */
+}
+.box1{
+    background-color: cadetblue;
+    color: white;
+    width: 10%;
+}
+*{box-sizing:border-box;}
+#flexbox1{justify-content: flex-start; /*기본값)왼쪽정렬*/}
+#flexbox2{justify-content: flex-end; /*오른쪽정렬*/}
+#flexbox3{justify-content: center; /*가운데정렬*/}
+#flexbox4{justify-content: space-between; /*양쪽 끝에 여백없이 사이 여백 균등 정렬*/}
+#flexbox5{justify-content: space-around; /*여백 균등정렬+ 양쪽 끝 여백은 절반*/}
+#flexbox6{justify-content: space-evenly; /*여백 균등정렬+ 양쪽 끝 여백도 균등*/}
+
+.fbox{
+    display: flex;
+    width: 200px;
+    border: 5px solid blueviolet;    
+}
+.fbox1{align-items: stretch;} /*자식 요소는 컨테이너의 높이만큼 자동으로 늘어남(기본값)*/
+.fbox2{align-items: flex-start; flex-wrap: wrap;} /*윗변 정렬, 사이즈 자동으로 안 늘어남*/
+.fbox3{align-items: flex-end;} /*밑변 정렬, 사이즈 자동으로 안 늘어남*/
+.fbox4{align-items: center;} /*중앙정렬, 사이즈 자동으로 안 늘어남*/
+.fbox5{flex-wrap: wrap; align-items: baseline;} /*텍스트의 밑줄을 기준선을 잡음*/
+
+
+/* 여러개 선택지 작성시 ,쉼표구분 */
+.box2,.box3,.box4,.box5,.box6,.box7{ background-color: red; color:white; border: 1px solid black;}
+
+.box2{ width: 50px; height: 50px;}
+.box3{width: 100px; height: 100px; display: inline-block; align-items: center;}
+.box5{width: 50px; height: 80px;}
+.box6{width: 100px; height: 150px; display: inline-flex; align-items: center;}

@@ -1,0 +1,83 @@
+/* 
+    어디의{무엇을:어떻게;}
+
+    1.어디의????
+        -css선택자
+        1. *            :공통(와일드카드): 모든곳에 적용
+        *{color: red;}
+        모든곳의 색상을 레드로
+        2.마크업이름    :해당 마크업만 적용
+            p{color:red}
+            p태그의 색상을 레드로
+        3. class속성    :해당 class명을 가지는 곳에 적용(복수)
+            .class명{color:red;}
+            class명을 가진곳에 색상을 레드로
+        4. id속성       :해당 id명을 가지는 곳에 적용(단일)
+            #id명{color:red;}
+            id명을 가진곳에 색상을 레드로
+
+        우선순위
+             *<마크업<class<id
+    2.무엇을
+        -속성명
+    3. 어떻게
+        -속성 값
+
+*/
+
+/* 1.*모든곳에 적용 */
+
+*{color:red;}/*모든곳의 폰트색을 red로*/
+/* 마크업적용 */
+h4{color:yellow;} /*h4마크업의 폰트색을 redㄹ*/
+/* class 명 적용 */
+.text1{color:blue;}
+/* class 속성에 'text1'이라는 이름을 갖는 마크업에 폰트색을 블루로 */
+
+#text2{color:green;}
+/* id속성에 'text2'라는 이름을 갖는 마크업에 폰트색을 그린으로 */
+
+body{background-color:black;}
+
+.title{
+    font-family: 궁서;/*글꼴 저장하기*/
+    font-size: 30px; /*글꼴 크기 */
+    font-style: italic; /*기울기*/
+    font-weight: bold; /*글꼴 긴하게*/
+
+
+
+}
+@font-face { /*웹 폰트복사===============================================*/
+    font-family: 'Youth';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
+    }
+    /* ============================================================================= */
+.content{
+    font-family:'Youth'; /*외부폰트 지정하기*/
+    color:brown;          /*폰트색상*/
+    word-spacing: 5px;    /*어간*/
+    letter-spacing: 2px;  /*자간*/
+    line-height: 150%;    /*줄간격*/
+}
+
+#writer{
+    /* text-align: left,right,center; 텍스트 가로정렬 */
+    text-decoration:line-through overline; 
+    /*텍스트 선긋기:
+    line-through: 취소선, underline 밑줄 overline 윗줄
+    */
+    text-shadow: 1px 1px 5px red
+    /*텍스트 그림자: x축의 위치 y축의 위치 흐림정도 색상*/
+
+}
+
+/* 색상을 지정하는 방법
+color: red;             1.색상이름
+color: #FFEB33;         2.헥사코드(16진수)
+color: rgb(251.247.17); 3.RGB색상+a까지 가능
+
+*/

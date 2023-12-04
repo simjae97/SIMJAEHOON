@@ -1,0 +1,40 @@
+
+#wrap{
+    text-align: center;
+
+}
+#header{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#img1{
+}
+
+#img2{
+    background-image: url(img/KakaoTalk_20231130_095945865.png);
+    width: 100px;
+    height: 100px;
+}
+
+#footer{
+    width: 1280px;
+    margin: 0 auto;
+
+}
+#main{
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+#bottomFooter{
+    display: flex;
+    justify-content: center;
+    border: solid;
+    margin: 0 auto;
+}
+
+h6{
+    border: solid;
+}

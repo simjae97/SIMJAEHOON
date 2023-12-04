@@ -1,0 +1,200 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+#img1{
+    background-image: url(img/sub_reservation.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    width: 1600px;
+    background-size: 100% 70%; 
+    background-position: center center;
+    height: 300px; 
+  
+}
+#img1 div{
+    margin: 0 auto;
+}
+#img1 h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+#center{
+    display: flex;
+    justify-content: center;
+}
+#article{
+    width: 800px;
+    background-color: #FCF9EA;
+    text-align: center;
+    margin-right: 30px;
+}
+#p1{
+    text-align: center;
+    margin: 30px auto;
+    text-shadow: 0 0;
+}
+#p2{
+    margin-bottom: 20px;
+    text-shadow: 0 0;
+}
+#aside{
+    width: 400px;
+
+    padding: 20px 10px;
+}
+table{
+    width: 630px;
+    margin: 20px auto;
+
+}
+#th1{
+    justify-content: center;
+    display: flex;
+    padding-right: 10pt;
+
+}
+tr{
+    display: flex;
+}
+th{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 550;
+    width: 87px;
+    padding: 12px 0;
+    background-color: #EEEEEE;
+    padding-left: 3px;
+}
+
+td{
+    
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 87px;
+    padding-bottom: 50px;
+    text-align: left;
+    color: black;
+    padding-left: 3px;
+
+    padding-top: 4px;
+}
+
+#sun{
+    color: red;
+
+}
+
+#Sat{
+    border-right: 1px solid black;
+}
+
+#aside h3{
+    border-left: 7px solid #444444;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+#aside li{
+    line-height: 1.6;
+}
+#as1{
+    margin-bottom: 30px;
+}
+
+#as2{
+    margin-bottom: 20px;
+}
+
+#aside h4{
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* 여기부터 헤더 와 푸터*/
+#header1{
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+#header2{
+    margin-top: 30px;
+    
+}
+#header2 a{
+    display: flex;
+}
+#the{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#std{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#header3{
+    display: flex;
+    align-items: center;
+}
+#header3 a{
+    font-size: 14px;
+    text-shadow: 0 0;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+#footer{
+    background-color: #292C32;
+    justify-content: center;
+    display: flex;
+    padding: 25px 0 50px;
+    margin-top: 20px;
+}
+
+#footer1{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#footer1 a{
+    color: white;
+}
+#customer{
+    text-shadow: 0 0;
+}
+#customer li{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#address{
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+#address div{
+    margin-bottom: 15px;
+}
+
+#logo{
+    padding-top: 10pt;
+}

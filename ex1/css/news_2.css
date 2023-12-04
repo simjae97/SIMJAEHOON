@@ -43,3 +43,24 @@
     margin-right: 30px;
     padding-bottom: 5px;
 }
+
+#mainwrap{
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+#articlewrap{
+    width: 1500px;
+    text-align: center;
+}
+
+#articletitle{
+    width: 1200px;
+    background-color: #3c3c3c;
+    margin: 0 auto;
+}
+
+#articlemain > img{
+    width: 1120px;
+}
+/* 백그라운드 컬러안들어감 다시하기 */

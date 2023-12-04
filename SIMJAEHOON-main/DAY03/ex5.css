@@ -1,0 +1,60 @@
+
+.s1{
+   
+    border: 1px dotted black;
+    text-align: center;
+    font-size: 18pt;
+    padding:20pt 0 ;
+    margin-bottom: 15pt;
+}
+.i1{
+    padding-top: 15pt;
+    width: 300pt;
+    margin-bottom: 30pt;
+}
+
+input{
+    width: 400pt;
+    font-size: 18pt;
+    padding: 10pt ;
+    margin-bottom: 10pt;
+}
+
+.s2{
+    display: inline-block;
+    border: 1px solid skyblue;
+    width: 420pt;
+    height: 30pt;
+    border-radius: 10pt;
+    background-color: skyblue;
+    padding-top: 10pt;
+    color: white;
+    margin-bottom: 20pt;
+    font-weight: bold;
+}
+.i2{
+    width: 20pt;
+    margin-right: 5pt;
+}
+a{text-decoration: none;
+}
+
+.s3{
+    color: cadetblue;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.s4{
+    color: cadetblue;
+    font-size: 12pt;
+    padding-left: 10pt;
+    font-weight: bold;
+
+}
+
+.s5{
+    margin-left: 10pt;
+    color:dodgerblue;
+    font-weight: bold;
+}
