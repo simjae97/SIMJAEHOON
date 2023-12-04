@@ -22,11 +22,11 @@
             <li><a href="#formArea">Form</a></li>
           </ul>
         </nav>
-        <p>Scroll<br><img src="images/bar.png" alt=""></p>
+        <p class="scroll">Scroll<br><img src="images/bar.png" alt=""></p>
       </div>
     </header>
     <main>
-      <section id="msgArea"> <!--p124-->
+      <section class="msgSec" id="msgArea"> <!--p124-->
         <div class="innerWrap">
           <h2>Message</h2>
           <p>
@@ -37,32 +37,36 @@
             바쁘시겠지만 부디 오셔서 축하해주시면 더없이 기쁘겠습니다.<br>
             참석 여부는 페이지 하단 폼을 통해 알려주실 수 있습니다.<br>
           </p>
-          <p><img src="images/message_img.png" alt="카피조우와 카피코"></p>
+          <p class="illust"><img src="images/message_img.png" alt="카피조우와 카피코"></p>
         </div>
       </section>
-      <section id="dateArea">   <!--p124-->
+      <section class="dateSec" id="dateArea">   <!--p124-->
         <div class="innerWrap">
           <h2>Save the Date</h2>
-          <p><img src="images/date_img.jpg" alt=""></p>
-          <p>
-            3023.8.8 Thu<br>
-            Start 18:30-
-          </p>
-          <section>
-            <h3>Access</h3>
-            <p>
-              나뭇잎길 1-2-3<br>
-              Ristorante Capita에서<br>
-              02-XXXX-XXXX<br>
-            </p>
-          </section>
+          <div class="layoutWrap">
+            <p><img src="images/date_img.jpg" alt=""></p>
+            <div>
+              <p class="dateDetailSec">
+                3023.8.8 <span class="word1">Thu</span><br>
+                <span class="word2">Start</span> <span class="word3">18:30-</span>
+              </p>
+              <section class="accessSec">
+                <h3>Access</h3>
+                <p>
+                  나뭇잎길 1-2-3<br>
+                  Ristorante Capita에서<br>
+                  02-XXXX-XXXX<br>
+                </p>
+              </section>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="formArea"> <!--p124-->
+      <section class="formSec" id="formArea"> <!--p124-->
         <div class="innerWrap">
           <h2>RSVP</h2>
           <form action="" method="">
-            <p>
+            <p class="attendRadio">
               <!-- 126p radio type에서는 name을 동일하게 해야 단일선택 가능 -->
               <label><input type="radio" name="attend" value="참석" checked="checked"/> 참석</label>
               <label><input type="radio" name="attend" value="불참"/> 불참</label>
@@ -76,14 +80,14 @@
                 <option value="인간"> 인간 </option>
               </select>
             </p>  
-            <p>알레르기가 있는 음식 
+            <p class="allergyCheck">알레르기가 있는 음식 
               <label><input type="checkbox" value="달걀" name="allergy" /> 달걀</label>
               <label><input type="checkbox" value="우유" name="allergy" /> 우유</label>
               <label><input type="checkbox" value="밀" name="allergy" /> 밀</label>
               <label><input type="checkbox" value="대두" name="allergy" /> 대두</label>
             </p>
             <p>메시지<textarea name="Message"></textarea></textarea></p>
-            <p><input type="submit" value="Send"/></p>
+            <p class="submitBtn"><input type="submit" value="Send"/></p>
           </form>
         </div>
       </section>
