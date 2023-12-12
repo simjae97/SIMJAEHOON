@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='step2.js'></script>
+</head>
+<body>
+    <div style="display:flex;">
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 입차 </h3>
+            차량번호 : <input id="carInput" type="text"/> <br/>
+            입차시간 : <input id="timeInput" type="time"/> <br/>
+            <input onclick="입차()" type ="button" value="가입"/>
+        </div>
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 출차 </h3>
+            차량번호 : <input id="carInput2" type="text"/> <br/>
+            출차시간 : <input id="timeInput2" type="time"/> <br/>
+            <input onclick="login()" type ="button" value="로그인"/>
+        </div>
+    </div>
+    <div>
+        <h3> 일별 매출 현황:</h3>
+        <span></span>
+    </div>
+</body>
+</html>

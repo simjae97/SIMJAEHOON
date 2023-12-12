@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='step1.js'></script>
+</head>
+<body>
+    
+
+    <div style="display:flex;">
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 회원 등록 : 배열 내 값 저장 </h3>
+            sign ID : <input id="nameInput" type="text"/> <br/>
+            sign PW : <input id="pwInput" type="text"/> <br/>
+            <input onclick="sign()" type ="button" value="가입"/>
+        </div>
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 회원 로그인 : 배열내 값 확인 </h3>
+            login ID : <input id="nameInput2" ="text"/> <br/>
+            login PW : <input id="pwInput2" ="text"/> <br/>
+            <input onclick="login()" type ="button" value="로그인"/>
+        </div>
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 회원 정보수정 : 배열내 값 변경 </h3>
+            현재 ID : <input id="nameInput3" ="text"/> <br/>
+            변경할 ID : <input id="nameInput4" ="text"/> <br/>
+            현재 PW : <input id="pwInput3" ="text"/> <br/>
+            변경할 PW : <input id="pwInput4" ="text"/> <br/>
+            <input onclick="rename()" type ="button" value="변경"/>
+        </div>
+        <div style="width: 40%; border: 1px solid black;">
+            <h3> 회원 삭제 : 배열 값 삭제 </h3>
+            삭제할 ID : <input id="nameInput5" ="text"/> <br/>
+            삭제할 PW : <input id="pwInput5" ="text"/> <br/>
+            <input onclick="del()" type ="button" value="삭제"/>
+        </div>
+    </div>
+
+</body>
+</html>
