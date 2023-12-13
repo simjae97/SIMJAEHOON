@@ -236,6 +236,17 @@ and				or			not		xor
 		}
 		-default, break;
 
+제어문(반복문)
+	1.for문
+		for(초기값 ; 조건문 ; 증감식){
+			실행코드
+		}
+	2.실행순서
+		1.초기값
+		2.조건문
+		[참이면] 3.실행코드 -> 4증감식 -> 2조건문
+		[거짓이면] 종료
+
 
 -키워드
 	break : switch, 반복문(for,while) {}탈출
@@ -276,3 +287,19 @@ and				or			not		xor
 	-선언된 위치{}에 따라 변수 사용 여부 판단.
 		1.{}안에서 선언된 변수/상수는 해당 {}밖에서 사용불가능
 		2.{}안에서 선언된 변수/상수는 해당 {}안에있는 하위 {}안에는 들어갈수있다.
+
+DOM(문서 document 객체 Objeck 모델Model)객체
+	1.document		:html	-(.js는 항상 html안에 존재한다)
+		제공하는 함수
+		1.document.querySelector("선택자") - #id,.class,마크업
+
+		속성
+		.value								input , select , textarea..입력태그
+		.innerHTML:							div, ul , span,table,h...입력태그 외
+
+	1.html전체를 호출한다.
+		const htmlObj = document;
+	2.html 중에서 input 1개 호출
+		const inputObj = document.querySelector('input');
+	3.html 중에서 input의 입력된 value 호출
+		const inputValue = document.querySelector('input').value;
