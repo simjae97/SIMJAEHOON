@@ -3,10 +3,10 @@ let todo = [];
 let money =[];
 let date2 = [];
 
-function rework(n){
+function rework(n){ //쉼표넣기
     let a = String(n);
-    for ( let i = a.length-3; i>0; i -=3){
-        a =a.substring(0,i)+","+a.substring(i);
+    for ( let i = a.length-3; i>0; i -=3){ //뒤에서 세번째 자리수부터, 3자리주기이니 3자리마다 반복
+        a =a.substring(0,i)+","+a.substring(i); //0~i번째 문자열+','+i~끝문자열
     }
     return a;
 }
