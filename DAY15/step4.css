@@ -1,5 +1,5 @@
 #wrap{
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -11,6 +11,7 @@ h1{
 
 #todoTop {
     display: flex;
+    justify-content: center;
 }
 
 #tableunder {
@@ -22,3 +23,10 @@ h1{
     padding: 10px 0;
     margin-top: 10px;
 }
+.menubars {
+    display: none;
+  }
+
+  #check-btn:checked + .menubars {
+    display: block;
+  }
