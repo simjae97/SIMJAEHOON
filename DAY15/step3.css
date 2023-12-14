@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} /* 외부 폰트*/
+*{
+  box-sizing: border-box;
+  font-size: 16px;  
+  font-family: SOYOMapleBoldTTF;
+}
+
+
+#wrap {
+    width: 300px;
+    margin: 0 auto;
+}
+/* 쓰기구역 */
+#todoTop{ display: flex; height: 40px; margin-bottom: 20px;}
+#content{width: 250px; padding: 10px; border: none; box-shadow: 0px 0px 3px #99c72f;}
+
+#todoTop >input[type ="text"]:focus{outline: none;}
+#todoTop >input[type="button"]{
+    width: 50px; border: none; padding: 10px; box-shadow: 0px 0px 3px #99c72f;
+    cursor: pointer;
+}
+
+/* 출력구역 */
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 1px;
+    padding: 5px 10px ;
+    background-color: aliceblue;
+}
+
+.todo >.btnBox >input{
+    font-size: 12px;
+    border: none; box-shadow: 0px 0px 3px #99c72f;
+    cursor: pointer;
+}
+
+.success{ background-color: rgba(0, 0, 0, 0.3);}
+
+.success > .content {text-decoration: line-through black;}

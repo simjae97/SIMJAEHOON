@@ -1,0 +1,24 @@
+#wrap{
+    width: 300px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 10px solid green;
+    font-size: 60px;
+}
+
+#todoTop {
+    display: flex;
+}
+
+#tableunder {
+    border: 1px green solid;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: green;
+    padding: 10px 0;
+    margin-top: 10px;
+}
