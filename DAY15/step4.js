@@ -10,14 +10,15 @@ function rework(n){ //쉼표넣기
     }
     return a;
 }
-function calc(){
+
+function calc(){ //total계산함수
     let total = 0;
     for (let i = 0; i<money.length; i++){
         total += Number(money[i]);
     }
     return total;
 }
-function sort(){
+function sort(){ //만약 날짜와 항목이 같은 배열이 있다면 money의 값을 합치고 열을 삭제
     let sortDate = date2.map(Number);
     for (let i= 0; i<=date.length-1; i++){ 
         for (let j = i+1; j<=date.length-1; j++){
@@ -27,13 +28,14 @@ function sort(){
                 date.splice(j,1);
                 todo.splice(j,1);
                 date2.splice(j,1);
+                sortDate.splice(j,1);
             }
         }
 
     }
-    for (let i = sortDate.length-1; i >0; i--) {
+    for (let i = sortDate.length-1; i >0; i--) { //
         for (let j = 0; j < i; j++) {
-            if (sortDate[j] > sortDate[j+1]) {
+            if (sortDate[j] > sortDate[j+1]) { //정렬한 날짜를 확인하고 모든 배열을 오름차순 정렬
                 // money 배열의 요소 교환
                 let tempMoney = money[j];
                 money[j] = money[j+1];
@@ -64,23 +66,31 @@ function sort(){
 function listRe(){ //등록,변경,삭제후 배열의 최신상태를 html에 대입한다
     let html =`<table> <th> 날짜 </th> <th> 항목</th> <th>금액</th><th>비고</th>`;
     const bot = document.querySelector(`#bot`);
-    for (let i= 0; i<date.length; i++){
-        html += `<tr><td>${date[i]}</td><td>${todo[i]}</td><td>${rework(money[i])}원 </td><td><input onclick="del(${i})" type="button" value="삭제"></td>
-        <td><input id="check-btn" type="checkbox"/>수정<span class="menubars"><input id ="ndate${i}" type="date" value ="${date[i]}"/><input id ="nvalue${i}" type="text" value="${todo[i]}"/><input id ="nmoney${i}" type="text" value = "${money[i]}" />
+    for (let i= 0; i<date.length; i++){ //for문으로 배열만큼 순회하며 html추가
+        html += `<tr><td>${date[i]}</td><td>${todo[i]}</td><td>${rework(money[i])}원 </td>
+        <td><input onclick="del(${i})" type="button" value="삭제"></td>
+        <td><input id="check-btn" type="checkbox"/>수정<span class="menubars">
+        <input id ="ndate${i}" type="date" value ="${date[i]}"/>
+        <input id ="nvalue${i}" type="text" value="${todo[i]}"/>
+        <input id ="nmoney${i}" type="text" value = "${money[i]}" />
         <input onclick="re(${i})" type="button" value="교체"></span></td></tr>`
         }
-    html += `</table> <div id ="tableunder">총 합계:${rework(calc())}원</div>`
+    html += `</table> <div id ="tableunder">총 합계:${rework(calc())}원</div>` //총 합계는 단 한번만 출력되면 되니 for문 밖에
     // 3.대입 
     bot.innerHTML=html;
     
 
 
 }
-function re(n){
+function re(n){ //교체함수, 입력과 같으나 push가 아닌 교체
     console.log("교체함수 실행");
     const content2 = document.querySelector(`#nvalue${n}`).value;
     const content3 = Number(document.querySelector(`#nmoney${n}`).value);
     const content1 = document.querySelector(`#ndate${n}`).value;
+    if (isNaN(content3)){
+        alert("숫자를 입력해 주세요")
+        return;
+    }
     if(content1 == "" || content2=="" || content3 == ""){
         alert("입력되지않은 값이 존재합니다")
     }
@@ -96,13 +106,17 @@ function re(n){
         listRe();
     }   
 }
-function input(){
+function input(){ //인풋함수
     console.log("인풋함수 실행");
     const content1 = document.querySelector(`#date`).value;
     const content2 = document.querySelector(`#value`).value;
     const content3 = Number(document.querySelector(`#money`).value);
     let time = content1.split("-");
     let time2 = time[0]+ time[1]+ time[2];
+    if (isNaN(content3)){
+        alert("숫자를 입력해 주세요");
+        return;
+    }
     if(content1 == "" || content2=="" || content3 == ""){
         alert("입력되지않은 값이 존재합니다")
     }
