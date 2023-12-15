@@ -138,8 +138,8 @@ function 구매내역출력(){
 
 function 정렬(){
     let tmp = '';
-    for(let j=0; j<구매날짜.length-1; j++){
-        for(let i=0; i<구매날짜.length-1; i++){
+    for (let j = 구매날짜.length-1; j >0; j--) { //
+        for (let i = 0; i < j; i++) {
             if(구매날짜[i]<구매날짜[i+1]){
                 // 날짜 정렬
                 tmp = 구매날짜[i];
