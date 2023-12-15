@@ -170,6 +170,9 @@ function 구매(i){
             구매제품명.push(제품명[i]); console.log(구매제품명);
             구매가격.push(가격[i]); console.log(구매가격);
         }
+        else{
+            alert("날짜형식이 다릅니다");
+        }
     //출력
     console.log(`구매 ${수량[i]}`);
     정렬();
