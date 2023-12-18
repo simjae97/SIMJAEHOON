@@ -1,0 +1,77 @@
+    const 제품 = [{
+        제품명: ,
+        가격: ,
+        수량: ,
+        제품이미지:
+    }]
+
+    const 구매목록 =[{
+        구매날짜 : ,
+        구매제품명: ,
+        구매가격:
+
+    }]
+
+1.등록()
+{
+    const itemName
+    const itemPrice
+    const itemCnt
+    const itemImg 
+    const imageSrc
+    
+    const product = {
+        제품명:itemName,
+        가격:itemPrice,
+        수량:itemCnt,
+        제품이미지:imageSrc
+    }
+
+}
+
+2.출력()
+{
+    let html = "";
+    let tableDiv
+
+}
+
+3.rework(){
+    let a = String(n)
+}
+
+4.수정(){
+    let retouch
+}
+
+5.function 확인(i){
+    let retouch = document.querySelector(`.open${i}`);
+    let a =document.querySelector(`.name${i}`).value;
+    let b = document.querySelector(`.price${i}`).value;
+    let c =document.querySelector(`.siu${i}`).value;
+}
+
+6.function 구매내역출력(){
+    let html2 = "";
+    let table2 = document.querySelector('#table2 tbody');
+
+    let sumDiv = document.querySelector('#sum');
+    let testy2 = 0
+}
+
+7.function 정렬(){
+    let tmp = '';
+}
+
+8.function 구매(i){
+    
+    const date =prompt('날짜를 입력해주세요 ex)yyyy-mm-dd')
+
+            const purchase = {
+                구매날짜 : date,
+                구매제품명:제품[i].제품명,
+                구매가격:제품[i].가격
+            }
+    
+
+}
