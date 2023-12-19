@@ -301,7 +301,7 @@ and				or			not		xor
 
     식별:데이터검색, 인덱스(순서)	
 
-객체
+객체(object)
 	실제로 존재하는 사물을 의미(사전적: 시렞 존재하는것)
 	key와 value를 한쌍으로 하는 속성(property)를 가짐
 		property => ( key: value )
@@ -311,7 +311,7 @@ and				or			not		xor
 		{key:value,key:value,key:value} (key의 이름이 중복되면 안됨)
 	객체 호출
 		변수/상수명
-	객체내 속성 값 호출ㄹ
+	객체내 속성 값 호출
 		변수/상수명.속성명
 		변부/상수명['속성명']
 	객체내 속성 추가
@@ -324,7 +324,7 @@ and				or			not		xor
 		1.{}안에서 선언된 변수/상수는 해당 {}밖에서 사용불가능
 		2.{}안에서 선언된 변수/상수는 해당 {}안에있는 하위 {}안에는 들어갈수있다.
 
-DOM(문서 document 객체 Objeck 모델Model)객체
+DOM(문서 document 객체 Object 모델Model)객체
 	1.document		:html	-(.js는 항상 html안에 존재한다)
 		제공하는 함수
 		1.document.querySelector("선택자") - #id,.class,마크업
@@ -339,3 +339,5 @@ DOM(문서 document 객체 Objeck 모델Model)객체
 		const inputObj = document.querySelector('input');
 	3.html 중에서 input의 입력된 value 호출
 		const inputValue = document.querySelector('input').value;
+
+
