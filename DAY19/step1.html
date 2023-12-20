@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+</head>
+<body>
+
+    <div id="wrap"><!--전체구역-->
+        <div id="header">
+            <img src="img/2.png"/>
+            <ul>
+                <li>신제품(new)</li>
+                <li class="selectMenu">프리미엄</li>
+                <li>와퍼</li>
+                <li>치킨&슈림프버거</li>
+                <li>올데이킹&킹모닝</li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+            
+            </div>
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                    </div>
+                    <div id="cartBottom">
+                        <!-- 장바구니에 담긴 제품1개 -->
+                    </div>
+                </div>
+                <div id="cartBtns">
+                    <input type="button" onclick="unorder()" value="취소하기"/>
+                    <input type="button" onclick ="order()" value="주문하기"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>관리자 메뉴</h3>
+        <div>
+            <input type="text" id="cano" placeholder="카테고리번호"/>
+            <input type="text" id="caname" placeholder="카테고리이름"/>
+            <input type="button" onclick="cupload()" value="확인">
+        </div>
+        <div id = "minput">
+            <input type="text" id="pno" placeholder="번호"/>
+            <input type="text" id="pname" placeholder="이름"/>
+            <input type="text" id="price" placeholder="가격"/>
+            <input type="text" id="cano1" placeholder="넣을카테고리"/>
+            <input type="button" onclick="pupload()" value="확인">
+        </div>
+        <table>
+            <thead><th>주문번호</th><th>주문날짜</th><th>메뉴</th><th>가격</th><th>상태</th><th>비고</th></thead>
+            <tbody id="history"></tbody>
+        </table>
+    </div>
+    <script src='step1.js'></script>
+</body>
+</html>

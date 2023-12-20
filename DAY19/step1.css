@@ -1,0 +1,135 @@
+/* *{
+    border: 1px red solid;
+} */
+
+/* 전체구역 */
+#wrap{
+    width: 700px; margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+/* 헤더이미지 */
+
+#header > img{
+    width: 100%;
+}
+
+/* 헤더 카테고리 */
+
+#header > ul{
+    margin: 0;
+    padding: 0;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header > ul > .selectMenu{
+    border-bottom: solid red 2px;
+    padding-bottom: 5px;
+    color: red;
+    font-weight: bold;
+}
+/* 제품 목록구역 */
+#productBox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow-y: scroll;
+}
+#productBox > .product {
+    width: 200px;
+    margin: 10px 10px;
+
+}
+
+.product > img{
+    width: 100%;
+}
+
+.product > .pinfo {text-align: center; font-weight: bold;}
+
+.product > .pinfo> .pprice{font-weight: bold; color: red;}
+
+/* 카트버튼들 */
+#cartBtns{
+    display: flex;
+}
+#cartBtns > input{
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+/* 자식요소 선택자(자식이 여러개일떄 자식의 순번(1부터시작)으로 고르기 가능 의사클래스 */
+#cartBtns > input:nth-child(1){
+    background-color: black;
+}
+
+#cartBtns > input:nth-child(2){
+    background-color: red;
+}
+
+/* 카트정보의 상단부분 */
+#cartContent{
+    background-color: #e8e8e8;
+}
+#cartTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+#cartBottom{
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    height: 150px;
+}
+
+#cartBottom > .citem{
+    /* width: 150px; 안먹힘*/
+    min-width: 150px;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+
+}
+#cartBottom > .citem > div:nth-child(1){
+    width: 130px;
+    height: 80px;
+
+}
+#cartBottom > .citem > div:nth-child(2){
+    color: red;
+}
+#cartBottom > .citem > span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#cartTop > div:nth-child(1) > span{
+    background-color: red;
+    border-radius: 10px;
+    color: aliceblue;
+    display: inline-block;
+    width: 30px;
+    padding: 2px 0 ;
+    padding-left: 10px;
+}
+
+
+#cartTop > div:nth-child(2) > span{
+    color: red;
+
+}
+
+table input{
+    display: inline;
+}
+
