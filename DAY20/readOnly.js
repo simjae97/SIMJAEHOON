@@ -28,7 +28,7 @@ function readOnly(){ //매개변수:해당 글의 식별 번호 리턴: x
 readOnly();
 
 function del(){
-    if(Number(prompt("비밀번호를 입력해 주세요")) == postArray[i].비밀번호){
+    if(prompt("비밀번호를 입력해 주세요") == postArray[i].비밀번호){
         postArray.splice(i,1);
         localStorage.setItem(`postArray`,JSON.stringify(postArray));
         location.href="list.html"
@@ -39,7 +39,7 @@ function del(){
 }
 
 function update(){
-    if(Number(prompt("비밀번호를 입력해 주세요")) == postArray[i].비밀번호){
+    if(prompt("비밀번호를 입력해 주세요") == postArray[i].비밀번호){
         localStorage.setItem(`a`,i);
         location.href="edit.html"
     }
