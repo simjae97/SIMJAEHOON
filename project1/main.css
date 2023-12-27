@@ -2,14 +2,24 @@
     text-align: center;
 }
 #wrap {
+    width: 1400px;
     text-align: center;
     justify-content: space-between;
 }
-span{
+#topPark > span{
     display: inline-block;
-    border: 1px red solid;
+    border: 1px black solid;
     width: 10%;
     text-align: center;
     padding: 10px 0;
     margin: 10px;
+}
+
+
+.full{
+    background-color: red;
+}
+
+.select{
+    background-color: yellow;
 }

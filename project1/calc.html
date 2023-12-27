@@ -6,19 +6,18 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='calc.js'></script>
 </head>
 <body>
     <div id="wrap">
-        <div>
-            <div id="nowsignal">현재층</div>
-            <span>ㅇㅇ</span><span>ㅇㅇ</span><span>ㅇㅇ</span><span>ss</span><span>ㅇㅇ</span>
+        <div id="topPark">
         </div>
         <div>
-            <div>위치찾기: <input type="text" placeholder="자동차번호"/><input type="button" value="확인" onclick="층찾기()"/> </div>
-            <div>입차: <input type="text" placeholder="자동차번호"/><input type="datetime-local" placeholder="시간"/><input type="button" value="확인" onclick="입차()"/> </div>
-            <div>출차: <input type="text" placeholder="자동차번호"/><input type="datetime-local" placeholder="시간"/><input type="button" value="확인" onclick="입차()"/> </div>
+            <span onclick="park(0)">1층</span> <span onclick="park(1)">2층</span> <span onclick="park(2)">3층</span>
+            <div>위치찾기: <input id="fNum" type="text" placeholder="자동차번호"/><input type="button" value="확인" onclick="층찾기()"/> </div>
+            <div><input id = "cNum" type="text" placeholder="자동차번호"/><input id="time" type="datetime-local" placeholder="시간"/><input type="button" value="입차" onclick="입차()">
+            <input type="button" value="출차" onclick="출차()"/> </div>
         </div>
     </div>
+    <script src='calc.js'></script>
 </body>
 </html>
