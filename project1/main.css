@@ -1,6 +1,4 @@
-#nowsignal{
-    text-align: center;
-}
+
 #wrap {
     width: 1400px;
     text-align: center;
@@ -22,4 +20,8 @@
 
 .select{
     background-color: yellow;
+}
+
+#topPark{
+    height: 500px;
 }

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     // p.348
     const output = document.querySelector("#output");
-    const radios = document.querySelectorAll("[name=pet]");
+    const radios = document.querySelectorAll("[name=discount]");
 
     for (let i =0; i<radios.length; i++){
         // 이벤트 등록
